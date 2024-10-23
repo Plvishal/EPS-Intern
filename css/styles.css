@@ -76,7 +76,8 @@
 
 .feature_text {
   position: absolute;
-  bottom: 124px;
+  /* bottom: 290px; */
+  top: 250px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -98,4 +99,48 @@ button {
   border-radius: 5px;
   font-size: medium;
   font-family: sans-serif;
+}
+
+.snap_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+}
+
+.snap_section h1 {
+  width: 35%;
+  font-size: 2.5rem;
+  color: #202020;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+#snap_container {
+  width: 100%;
+  /* 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; */
+  display: grid;
+  /* justify-content: space-between; */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.snap_1 {
+  width: 100%;
+  text-align: justify;
+}
+.snap_1 h3 {
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: #202020;
+}
+.snap_1 p {
+  font-size: 1.2rem;
+  font-family: sans;
+
+  color: #202020;
 }
